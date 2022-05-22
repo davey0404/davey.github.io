@@ -1,11 +1,17 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track{
+    background: purple;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #db1d5c;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -216,6 +222,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.25em;
+
 	}
 
 	h4 {
@@ -2813,11 +2820,25 @@ input, select, textarea {
 		list-style: none;
 	}
 
-		.features li {
+
+
+		.features li{
 			width: calc(33.33333% - 2em);
 			margin-left: 2em;
 			margin-top: 3em;
 			padding: 0;
+		}
+
+		.features li .image img {
+			display: block;
+			border-radius: 100%;
+			width: 160px;
+			height: 160px;
+		}
+
+		.features li span {
+			color: rgb(89, 226, 89);
+	
 		}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -3121,7 +3142,7 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					max-width: 75%;
+					max-width: 20%;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3783,3 +3804,5 @@ input, select, textarea {
 			}
 
 		}
+
+	
