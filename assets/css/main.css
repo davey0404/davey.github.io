@@ -37,7 +37,33 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	background: #333;
+	padding-top: 5em;
+	display: flex;
+	justify-content: center;
 }
+.typewriter h1{
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid orange; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.1em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(50, end),
+	  blink-caret 1.5s step-end infinite;
+  }
+
+/* The typing effect */
+@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: purple; }
+  }
 
 ol, ul {
 	list-style: none;
@@ -184,7 +210,7 @@ input, select, textarea {
 	}
 
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 2 0;
 	}
 
 		p.content {

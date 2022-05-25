@@ -1,6 +1,6 @@
 var swiper = new Swiper(".brand-slider", {
-    spaceBetween: 20,
-    loop: true,
+    spaceBetween: 10,
+    loop: false,
     autoplay: {
         delay: 2500,
         disableOnInteraction: true,
